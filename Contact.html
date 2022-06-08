@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Contact.html with external css (Contact.css) -->
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <!-- Naming title of the page as CV -->
+    <title>CV</title>
+    </head>
+    <body>
+        <!-- Dividing section for class content -->
+        <div class="content"></div>
+        <!-- Linking pages using nav tag -->
+        <nav>
+            <!-- Creating table and its class as nav-table -->
+            <table class="nav-table">
+                <b>
+                <tr>
+                    <th><a href="Home.html">Home</a></th>
+                    <th><a href="CV.html">CV</a></th>
+                    <th><a href="Blog.html">Blog</a></th>
+                    <th><a href="Research.html">Research</a></th>
+                    <th><a href="Contact.html">Contact</a></th>
+                </tr>
+            </b>
+            </table>
+        </nav>
+        </div>
+        <!-- Dividing section for class top -->
+        <div class="top">
+            <h1>Contact Form</h1>
+            <h3>Give your details below to contact me.</h3>
+            <!-- Creating Form -->
+            <form>
+                    FirstName: <br>
+                    <input type="text" name="firstname" placeholder="write your first name" required><br>
+                    Last Name:<br>
+                    <input type="text" name="lastname" placeholder="write your last name" required><br>
+                    Mobile Number: <br>
+                    <input type="text" name="mobilenumber" placeholder="give your mobile number" id="phone" required><br>
+                    E-mail Address: <br>
+                    <input type="text" name="e-mailaddress" placeholder="give your e-mail address" required id="email"><br>
+                    <label for="Country">Select your Country</label><br>
+                    <select name="Country" id="Country">
+                    <option value="none">None</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="usa">U.S.A</option>
+                    <option value="uk">U.K</option>
+                    <option value="russia">Russia</option>
+                    <option value="others">Other</option>
+                    </select><br>
+                    <label for="gender">Select your Gender</label><br>
+                    <select name="gender" id="Gender">
+                    <option value="none">None</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Other</option>
+                    </select><br>
+                    <br>
+                    <input type="submit" value="Submit" onclick="alertMessage()">     
+            </form>
+            </div>
+            <!-- Using internal scrip to show popup message -->
+            <script>
+                function alertMessage(){
+                if(document.getElementById("phone").value=="" || document.getElementById("email").value==""){
+                    alert('Please completely fillup the form.');
+                }
+            }
+            </script>
+            <!-- Dividing section as class bottom -->
+            <div class="bottom">
+                <article>
+                <p><b>Thank You for your Response. I will reply you within two days.</p></b>
+                </article>
+            
+            </div>
+            <!-- Making footer of the page -->
+            <footer class="footer">
+                <h4><p> @ 2021 Shishir Shobhan Dawadi | All Rights Reserved</p></h4>
+            </footer>
+            </body>
+            </html>

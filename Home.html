@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking Home.html with Home.css (external css)-->
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <!-- Title of Home Page -->
+    <title>Home Page</title> 
+    <!-- using internal css to style image -->
+    <style type="text/css">
+        .img{
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+             width: 20%;
+            border-radius: 75%;
+        }
+        .hide{
+            display: none;
+        }
+  
+  </style>
+</head>
+<body>
+    <!-- Linking pages using nav tag -->
+    <nav>
+        <!-- Creating nav bar and Class as nav-table also linking different pages using anchor tag -->
+        <table class="nav-table">
+            <!-- Boldfacing Nav bar -->
+            <b>
+            <tr>
+                <th><a class="active" href="#">Home</a></th>
+                <th><a href="CV.html">C.V</a></th>
+                <th><a href="Blog.html">Blog</a></th>
+                <th><a href="Research.html">Research</a></th>
+                <th><a href="Contact.html">Contact</a></th>
+            </tr>
+        </b>
+        </table>
+    </nav>
+    
+    </div>
+    <!-- Creating Section for Heading and using inline css -->
+    <div>
+        <h1 style="text-align: center; color: darkgoldenrod;">Hello!</h1>
+    </div>
+    <!-- Creating section class name shishir -->
+    <div class="shishir">
+    <!-- Using internal javascript to toogle image -->
+        <img src="123.jpg" id="j1" class="img" hide>
+        <img src="1.JPG" id="j2" class="img hide">
+        <button onclick="toogle()">toogle</button>
+	<script type="text/javascript">
+		function toogle(){
+			var img1=document.getElementById("j1")
+			var img2=document.getElementById("j2")
+			if (img2.style.display=="none"){
+				img1.style.display="none";
+				img2.style.display="block";
+			}
+			else{
+				img2.style.display="none";
+				img1.style.display="block";
+			}
+		}
+		var img1=document.getElementById("j1");
+		img1.style.display="block";
+    </script>
+        
+        <br>
+        <br> <b>
+            <!-- Writting paragraph using inline css -->
+            <p style="text-align: center;"><h3>
+                I am Shishir Shobhan Dawadi,from Pathari-Sanishchare,Morang.<br>
+                Currently,I am studying BIT at Itahari International College  (IIC).<br>
+                This website is my college project and I hope you will like it.</h3>
+            </p>
+        </b>
+        </div>
+        <!-- Creating class for footer -->
+        <footer class="footer">
+            <h4><p> @ 2021 Shishir Shobhan Dawadi | All Rights Reserved</p></h4>
+        </footer>
+
+
+</body>
+</html>

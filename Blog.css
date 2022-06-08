@@ -1,0 +1,23 @@
+/* setting background color */
+body{
+    background-color: #e6e6e6;
+}
+/* styling nav-table using external css */
+.nav-table{
+    background-color: #333;
+    border: 2px solid black;
+    width: 50%;
+    float: center;
+    overflow: hidden;
+}
+/* setting color during active using external css */
+.nav-table a{
+    color: #f2f2f2;
+}
+/* setting color during hover using external css */
+.nav-table a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+
